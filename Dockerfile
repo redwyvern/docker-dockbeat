@@ -1,4 +1,4 @@
-FROM ingensi/dockbeat
+FROM ingensi/dockbeat:1.0.0-rc3
 
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
     python-pip \
