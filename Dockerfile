@@ -11,3 +11,5 @@ RUN pip install yq
 RUN mv /etc/dockbeat/dockbeat.yml /etc/dockbeat/dockbeat.orig.yml && \
     yq -y '.logging.to_syslog = false' /etc/dockbeat/dockbeat.orig.yml > /etc/dockbeat/dockbeat.yml
 
+ENTRYPOINT ["/usr/local/bin/dockbeat"]
+CMD ["-e", "-c", "/etc/dockbeat/dockbeat.yml"]
