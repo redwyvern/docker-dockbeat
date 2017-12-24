@@ -1,4 +1,4 @@
-# Dockbeat Docker Container
+# Dockbeat Docker Image
 
 This container provides docker container statistics to the elasticsearch that can be viewed via the Kibana dashboard.
 
