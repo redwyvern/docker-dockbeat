@@ -1,4 +1,4 @@
-FROM ingensi/dockerbeat:1.0.0-rc3
+FROM ingensi/dockerbeat:1.0.0
 
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
     python-pip \
